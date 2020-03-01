@@ -1,0 +1,93 @@
+body {
+  background-color: #F7DC6F;
+  font-family: 'Inconsolata', monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  clear: both; /* remove this if you want them flowing inline */
+  line-height: 2rem;
+}
+
+ul, li {
+  margin-left: 0; 
+  padding-left: 0;
+  margin-top: 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: medium;
+  outline: none;
+  width: 25%;
+  background: transparent;
+  border: 0;
+  border-bottom:1px solid #555;
+}
+
+button {
+  outline: none;
+}
+
+span {
+  height: 32px;
+  background: #BC6153;
+  color: #fff;
+  width: 0px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+input:focus {
+  border-bottom:1px solid #D35400;
+}
+
+input:focus::-webkit-input-placeholder{
+  color: #BC6153;
+}
+
+li:hover span{
+  width: 32px;
+  opacity: 1.0;
+}
+
+#finished li {
+  color: #9C9C9C;
+  text-decoration: line-through;
+}
+
+#container {
+  margin: auto 15%;
+}
+
+#flex-box {
+  display: flex;
+}
+
+.wrap {
+  flex: 1;
+}
+
+.list-container {
+  height: 300px;
+  width: 90%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 3%;
+  padding: 2%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+@media (max-width: 850px) {
+  .list-container {
+    display: block;
+    width: 90%;
+  }
+}

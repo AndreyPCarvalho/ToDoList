@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do List Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <!-- <script src="./lib/jquery-3.4.1.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/1f362dfa77.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h2>To Do List Project</h2>
+
+    <!-- adding a task -->
+    <input type="text" placeholder="Add a task">
+
+    <!-- <button type="submit">Add</button> -->
+
+    <!-- display tasks not finished yet -->
+    <div id="flex-box">
+      <div class="wrap">
+        <h3>Not yet finished</h3>
+        <div class="list-container">
+          <ul id="todo">
+
+          </ul>
+        </div>
+      </div>
+      <!-- list of finished tasks -->
+      <div class="wrap">
+        <h3>Tasks done</h3>
+        <div class="list-container">
+          <ul id="finished">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
